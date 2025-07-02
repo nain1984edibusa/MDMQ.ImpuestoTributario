@@ -1,0 +1,6 @@
+@MDMQ.ImpuestoTributario_HostAddress = http://localhost:5177
+
+GET {{MDMQ.ImpuestoTributario_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.deps.json
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.dll
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.pdb
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.AssemblyInfoInputs.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.AssemblyInfo.cs
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.csproj.CoreCompileInputs.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.dll
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\refint\MDMQ.ImpuestoTributario.Patentes.Dto.dll
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.pdb
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\ref\MDMQ.ImpuestoTributario.Patentes.Dto.dll

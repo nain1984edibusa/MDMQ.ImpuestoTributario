@@ -1,0 +1,43 @@
+[
+  {
+    "ContainingType": "MDMQ.ImpuestoTributario.Patentes.Api.Controllers.BeneficioTributarioController",
+    "Method": "GetBeneficioTributario",
+    "RelativePath": "api/BeneficioTributario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MDMQ.ImpuestoTributario.Patentes.Dto.DTOBeneficioTributario, MDMQ.ImpuestoTributario.Patentes.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MDMQ.ImpuestoTributario.Patentes.Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MDMQ.ImpuestoTributario.WeatherForecast, MDMQ.ImpuestoTributario.Patentes.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

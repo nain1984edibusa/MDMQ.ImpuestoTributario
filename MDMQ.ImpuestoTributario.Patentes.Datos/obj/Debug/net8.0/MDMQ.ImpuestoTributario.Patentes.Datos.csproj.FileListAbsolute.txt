@@ -1,0 +1,15 @@
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.deps.json
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.dll
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.pdb
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.dll
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.pdb
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.csproj.AssemblyReference.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.AssemblyInfoInputs.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.AssemblyInfo.cs
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.csproj.CoreCompileInputs.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.Imp.6C038AE4.Up2Date
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.dll
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\refint\MDMQ.ImpuestoTributario.Patentes.Datos.dll
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.pdb
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Datos\obj\Debug\net8.0\ref\MDMQ.ImpuestoTributario.Patentes.Datos.dll
