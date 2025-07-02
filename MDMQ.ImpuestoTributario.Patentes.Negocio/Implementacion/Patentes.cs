@@ -11,9 +11,9 @@ namespace MDMQ.ImpuestoTributario.Patentes.Negocio.Implementacion
 {
     public class Patentes : IPatentes
     {
-        private readonly IBeneficioTributario _iBeneficioTributario;
+        private readonly IBeneficioTributarioRepository _iBeneficioTributario;
 
-        public Patentes(IBeneficioTributario iBeneficioTributario)
+        public Patentes(IBeneficioTributarioRepository iBeneficioTributario)
         {
             _iBeneficioTributario = iBeneficioTributario;
         }

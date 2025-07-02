@@ -15,6 +15,7 @@ public partial class MDMQ_CORE_TRIBUTARIOContext : DbContext
     }
 
     public virtual DbSet<CorBeneficioTributario> CorBeneficioTributario { get; set; }
+    public virtual DbSet<CorTdCatalogo> CorTdCatalogo { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -51,6 +52,68 @@ public partial class MDMQ_CORE_TRIBUTARIOContext : DbContext
                 .HasColumnName("RAZON_SOCIAL");
             entity.Property(e => e.TipoCertificadoId).HasColumnName("TIPO_CERTIFICADO_ID");
             entity.Property(e => e.TipoEmpresaId).HasColumnName("TIPO_EMPRESA_ID");
+        });
+
+        modelBuilder.Entity<CorTdCatalogo>(entity =>
+        {
+            entity.HasKey(e => e.CorTdCatalogoId).HasName("COR_TD_CATALOGO_PKY");
+
+            entity.ToTable("COR_TD_CATALOGO", "TD", tb => tb.HasComment("Tabla que contiene los catálogos a utilizar"));
+
+            entity.Property(e => e.CorTdCatalogoId)
+                .HasComment("Identificador único del registro")
+                .HasColumnName("COR_TD_CATALOGO_ID");
+            entity.Property(e => e.CatalogoHijo)
+                .HasComment("Código propio del catálogo")
+                .HasColumnName("CATALOGO_HIJO");
+            entity.Property(e => e.CatalogoPadre)
+                .HasComment("Código del nivel al que pertenece el catálogo")
+                .HasColumnName("CATALOGO_PADRE");
+            entity.Property(e => e.CodigoNegocio)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasComment("Código propio del catálogo")
+                .HasColumnName("CODIGO_NEGOCIO");
+            entity.Property(e => e.Descripcion)
+                .HasMaxLength(200)
+                .IsUnicode(false)
+                .HasComment("Nombre del catálogo")
+                .HasColumnName("DESCRIPCION");
+            entity.Property(e => e.FechaCreacion)
+                .HasComment("Fecha de creación del registro")
+                .HasColumnType("datetime")
+                .HasColumnName("FECHA_CREACION");
+            entity.Property(e => e.FechaModificacion)
+                .HasComment("Fecha de modificación del registro")
+                .HasColumnType("datetime")
+                .HasColumnName("FECHA_MODIFICACION");
+            entity.Property(e => e.Nivel)
+                .HasComment("Número de nivel del catálogo")
+                .HasColumnName("NIVEL");
+            entity.Property(e => e.Parametro1)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasComment("Valor alfanumérico")
+                .HasColumnName("PARAMETRO1");
+            entity.Property(e => e.Parametro2)
+                .HasComment("Valor entero")
+                .HasColumnName("PARAMETRO2");
+            entity.Property(e => e.Parametro3)
+                .HasComment("Valor decimal")
+                .HasColumnType("decimal(15, 10)")
+                .HasColumnName("PARAMETRO3");
+            entity.Property(e => e.Parametro4)
+                .HasColumnType("datetime")
+                .HasColumnName("PARAMETRO4");
+            entity.Property(e => e.UsuarioCreacion)
+                .HasComment("Identificador del usuario que crea el registro")
+                .HasColumnName("USUARIO_CREACION");
+            entity.Property(e => e.UsuarioModificacion)
+                .HasComment("Identificador del usuario que modifica el registro")
+                .HasColumnName("USUARIO_MODIFICACION");
+            entity.Property(e => e.Vigente)
+                .HasComment("1=si está vigente, 0=no")
+                .HasColumnName("VIGENTE");
         });
 
         OnModelCreatingPartial(modelBuilder);

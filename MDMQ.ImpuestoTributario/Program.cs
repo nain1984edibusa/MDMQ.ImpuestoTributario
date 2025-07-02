@@ -13,7 +13,9 @@ builder.Services.AddDbContext<MDMQ_CORE_TRIBUTARIOContext>(options =>
 
 // Add services to the container.
 builder.Services.AddScoped<IPatentes, Patentes>();
-builder.Services.AddScoped<IBeneficioTributario, BeneficioTributario>(); // o la implementación real
+builder.Services.AddScoped<IBeneficioTributarioRepository, BeneficioTributario>(); // o la implementación real
+builder.Services.AddScoped<ICatalogoNeg, CatalogoNeg>(); // o la implementación real
+builder.Services.AddScoped<ICatalogoRepository, Catalogo>(); // o la implementación real
 
 
 builder.Services.AddControllers();

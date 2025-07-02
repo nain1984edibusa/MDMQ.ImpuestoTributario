@@ -6,7 +6,7 @@
    "IncludeConnectionString": false,
    "ModelNamespace": null,
    "OutputContextPath": null,
-   "OutputPath": "Models",
+   "OutputPath": "Models-Temp",
    "PreserveCasingWithRegex": true,
    "ProjectRootNamespace": "MDMQ.ImpuestoTributario.Patentes.Datos",
    "Schemas": null,
@@ -16,6 +16,10 @@
    "Tables": [
       {
          "Name": "[CORE].[COR_BENEFICIO_TRIBUTARIO]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[TD].[COR_TD_CATALOGO]",
          "ObjectType": 0
       }
    ],

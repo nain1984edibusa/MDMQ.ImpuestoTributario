@@ -1,6 +1,5 @@
 ﻿using MDMQ.ImpuestoTributario.Patentes.Datos.Contexts;
 using MDMQ.ImpuestoTributario.Patentes.Datos.Interfaz;
-using MDMQ.ImpuestoTributario.Patentes.Datos.Models;
 using MDMQ.ImpuestoTributario.Patentes.Dto;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -11,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Datos.Implementacion
 {
-    public class BeneficioTributario : IBeneficioTributario
+    public class BeneficioTributario : IBeneficioTributarioRepository
     {
         private readonly MDMQ_CORE_TRIBUTARIOContext _contextCoreTributario;
 

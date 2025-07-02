@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Datos.Interfaz
 {
-    public interface IBeneficioTributario
+    public interface IBeneficioTributarioRepository
     {
-
         Task<IEnumerable<DTOBeneficioTributario>> GetBeneficioTributario();
     }
 }

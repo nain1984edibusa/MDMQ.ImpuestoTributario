@@ -5,6 +5,7 @@ C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\ob
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.AssemblyInfoInputs.cache
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.AssemblyInfo.cs
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.csproj.CoreCompileInputs.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.sourcelink.json
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.dll
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\refint\MDMQ.ImpuestoTributario.Patentes.Dto.dll
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Dto\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.pdb

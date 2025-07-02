@@ -43,6 +43,44 @@
         }
       }
     },
+    "/api/Catalogo": {
+      "get": {
+        "tags": [
+          "Catalogo"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DTOCatalogo"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DTOCatalogo"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DTOCatalogo"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -142,6 +180,71 @@
           },
           "ingresoHasta": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DTOCatalogo": {
+        "type": "object",
+        "properties": {
+          "catalogoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "catalogoPadre": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "catalogoHijo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoNegocio": {
+            "type": "string",
+            "nullable": true
+          },
+          "nivel": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vigente": {
+            "type": "boolean"
+          },
+          "descripcionParametro": {
+            "type": "string",
+            "nullable": true
+          },
+          "valorNumerico": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorCarater": {
+            "type": "string",
+            "nullable": true
+          },
+          "parametro1": {
+            "type": "string",
+            "nullable": true
+          },
+          "parametro2": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "parametro3": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "parametro4": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           }
         },
