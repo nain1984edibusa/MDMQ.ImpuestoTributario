@@ -16,6 +16,8 @@ builder.Services.AddScoped<IPatentes, Patentes>();
 builder.Services.AddScoped<IBeneficioTributarioRepository, BeneficioTributario>(); // o la implementación real
 builder.Services.AddScoped<ICatalogoNeg, CatalogoNeg>(); // o la implementación real
 builder.Services.AddScoped<ICatalogoRepository, Catalogo>(); // o la implementación real
+builder.Services.AddScoped<IConsultaSriNeg, ConsultaSriNeg>(); // o la implementación real
+builder.Services.AddScoped<IConsultaSriRepository, ConsultaSri>(); // o la implementación real
 
 
 builder.Services.AddControllers();

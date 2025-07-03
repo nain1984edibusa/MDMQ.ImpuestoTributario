@@ -1,11 +1,3 @@
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.csproj.AssemblyReference.cache
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.AssemblyInfoInputs.cache
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.AssemblyInfo.cs
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.csproj.CoreCompileInputs.cache
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.MvcApplicationPartsAssemblyInfo.cache
-C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.sourcelink.json
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\bin\Debug\net8.0\appsettings.Development.json
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\bin\Debug\net8.0\appsettings.json
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.staticwebassets.endpoints.json
@@ -69,7 +61,15 @@ C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\bin\Debug\net8.
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Negocio.pdb
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Datos.pdb
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\bin\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Dto.pdb
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.csproj.AssemblyReference.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.AssemblyInfoInputs.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.AssemblyInfo.cs
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.csproj.CoreCompileInputs.cache
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\MDMQ.ImpuestoTributario.Patentes.Api.sourcelink.json
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\AmbDesarrollo\MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

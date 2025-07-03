@@ -7,6 +7,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Datos.Contexts;
 
+
+
+
+
 public partial class MDMQ_CORE_TRIBUTARIOContext : DbContext
 {
     public MDMQ_CORE_TRIBUTARIOContext(DbContextOptions<MDMQ_CORE_TRIBUTARIOContext> options)
@@ -15,6 +19,9 @@ public partial class MDMQ_CORE_TRIBUTARIOContext : DbContext
     }
 
     public virtual DbSet<CorBeneficioTributario> CorBeneficioTributario { get; set; }
+
+    public virtual DbSet<CorCatastroSri> CorCatastroSri { get; set; }
+
     public virtual DbSet<CorTdCatalogo> CorTdCatalogo { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -52,6 +59,218 @@ public partial class MDMQ_CORE_TRIBUTARIOContext : DbContext
                 .HasColumnName("RAZON_SOCIAL");
             entity.Property(e => e.TipoCertificadoId).HasColumnName("TIPO_CERTIFICADO_ID");
             entity.Property(e => e.TipoEmpresaId).HasColumnName("TIPO_EMPRESA_ID");
+        });
+
+        modelBuilder.Entity<CorCatastroSri>(entity =>
+        {
+            entity.HasKey(e => e.NumeroRuc).HasName("COR_CATASTRO_SRI_PKY");
+
+            entity.ToTable("COR_CATASTRO_SRI", "RNT", tb => tb.HasComment("Tabla que almacena los datos del contribuyente extraídos del SRi"));
+
+            entity.HasIndex(e => e.NumeroIdentificacion, "COR_CATASTRO_SRI_FKY01");
+
+            entity.HasIndex(e => e.ClaseContribuyenteId, "COR_CATASTRO_SRI_FKY02");
+
+            entity.HasIndex(e => e.ActividadEconomicaId, "COR_CATASTRO_SRI_FKY03");
+
+            entity.HasIndex(e => e.TipoContribuyente, "COR_CATASTRO_SRI_IDX01");
+
+            entity.HasIndex(e => e.Estado, "COR_CATASTRO_SRI_IDX02");
+
+            entity.Property(e => e.NumeroRuc)
+                .HasMaxLength(13)
+                .IsUnicode(false)
+                .HasComment("Número de RUC del contribuyente")
+                .HasColumnName("NUMERO_RUC");
+            entity.Property(e => e.ActividadEconomicaId)
+                .IsRequired()
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasComment("Referencia al identificador único del registro de la Actividad Económica")
+                .HasColumnName("ACTIVIDAD_ECONOMICA_ID");
+            entity.Property(e => e.Barrio)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("BARRIO");
+            entity.Property(e => e.CallePrincipal)
+                .HasMaxLength(200)
+                .IsUnicode(false)
+                .HasColumnName("CALLE_PRINCIPAL");
+            entity.Property(e => e.CargaInicial)
+                .HasMaxLength(1)
+                .IsUnicode(false)
+                .IsFixedLength()
+                .HasColumnName("CARGA_INICIAL");
+            entity.Property(e => e.CargoRepresentanteLegal)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasComment("Cargo del Representante Legal")
+                .HasColumnName("CARGO_REPRESENTANTE_LEGAL");
+            entity.Property(e => e.ClaseContribuyenteId)
+                .IsRequired()
+                .HasMaxLength(3)
+                .IsUnicode(false)
+                .HasComment("Referencia al identificador único del registro de la Clase de Contribuyente")
+                .HasColumnName("CLASE_CONTRIBUYENTE_ID");
+            entity.Property(e => e.CodigoPersonaRelacionadaSri)
+                .HasColumnType("numeric(10, 0)")
+                .HasColumnName("CODIGO_PERSONA_RELACIONADA_SRI");
+            entity.Property(e => e.CodigoPersonaSri)
+                .HasColumnType("numeric(10, 0)")
+                .HasColumnName("CODIGO_PERSONA_SRI");
+            entity.Property(e => e.CodigoUbicacionGeograficaCanton)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasColumnName("CODIGO_UBICACION_GEOGRAFICA_CANTON");
+            entity.Property(e => e.CodigoUbicacionGeograficaParroquia)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasColumnName("CODIGO_UBICACION_GEOGRAFICA_PARROQUIA");
+            entity.Property(e => e.CodigoUbicacionGeograficaProvincia)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasColumnName("CODIGO_UBICACION_GEOGRAFICA_PROVINCIA");
+            entity.Property(e => e.DescripcionEstadoContribuyente)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasColumnName("DESCRIPCION_ESTADO_CONTRIBUYENTE");
+            entity.Property(e => e.EmailPrincipal)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("EMAIL_PRINCIPAL");
+            entity.Property(e => e.Estado)
+                .IsRequired()
+                .HasMaxLength(3)
+                .IsUnicode(false)
+                .HasComment("Estado del contribuyente en el SRi")
+                .HasColumnName("ESTADO");
+            entity.Property(e => e.EstadoLegalCompania)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .HasComment("Estado Legal de la Compañía")
+                .HasColumnName("ESTADO_LEGAL_COMPANIA");
+            entity.Property(e => e.EstadoSociedad)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .HasComment("Estado de la Sociedad (Sector Popular y Solidario)")
+                .HasColumnName("ESTADO_SOCIEDAD");
+            entity.Property(e => e.FechaActualizacion)
+                .HasComment("Fecha de la Última Actualización")
+                .HasColumnName("FECHA_ACTUALIZACION");
+            entity.Property(e => e.FechaConstitucion)
+                .HasComment("Fecha de Constitución de la empresa")
+                .HasColumnName("FECHA_CONSTITUCION");
+            entity.Property(e => e.FechaHoraActualizacion)
+                .HasComment("Fecha y Hora de la Última Actualización")
+                .HasColumnType("datetime")
+                .HasColumnName("FECHA_HORA_ACTUALIZACION");
+            entity.Property(e => e.FechaHoraRegistro)
+                .HasComment("Fecha y Hora del Registro")
+                .HasColumnType("datetime")
+                .HasColumnName("FECHA_HORA_REGISTRO");
+            entity.Property(e => e.FechaInicioActividades)
+                .HasComment("Fecha de Inicio de Actividades")
+                .HasColumnName("FECHA_INICIO_ACTIVIDADES");
+            entity.Property(e => e.FechaInscripcion)
+                .HasComment("Fecha de Inscripción del RUC")
+                .HasColumnName("FECHA_INSCRIPCION");
+            entity.Property(e => e.FechaNombramiento).HasColumnName("FECHA_NOMBRAMIENTO");
+            entity.Property(e => e.FechaRegistro)
+                .HasComment("Fecha del Registro")
+                .HasColumnName("FECHA_REGISTRO");
+            entity.Property(e => e.FechaReinicioActividades)
+                .HasComment("Fecha de Reinicio de Actividades")
+                .HasColumnName("FECHA_REINICIO_ACTIVIDADES");
+            entity.Property(e => e.FechaSuspensionDefinitiva)
+                .HasComment("Fecha de Suspensión Definitiva")
+                .HasColumnName("FECHA_SUSPENSION_DEFINITIVA");
+            entity.Property(e => e.GrupoContribuyente)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasComment("Sub tipo de contribuyente (Tipo de Contribuyente)")
+                .HasColumnName("GRUPO_CONTRIBUYENTE");
+            entity.Property(e => e.IdentificacionRepresentanteLegal)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .HasComment("Número de cédula del Reqpresentante Legal")
+                .HasColumnName("IDENTIFICACION_REPRESENTANTE_LEGAL");
+            entity.Property(e => e.Interseccion)
+                .HasMaxLength(200)
+                .IsUnicode(false)
+                .HasColumnName("INTERSECCION");
+            entity.Property(e => e.NombreRepresentanteLegal)
+                .HasMaxLength(1200)
+                .IsUnicode(false)
+                .HasColumnName("NOMBRE_REPRESENTANTE_LEGAL");
+            entity.Property(e => e.NumeroCasa)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("NUMERO_CASA");
+            entity.Property(e => e.NumeroIdentificacion)
+                .IsRequired()
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasComment("Número de identificación del contribuyente (RUC o Cédula)")
+                .HasColumnName("NUMERO_IDENTIFICACION");
+            entity.Property(e => e.Obligado)
+                .IsRequired()
+                .HasMaxLength(1)
+                .IsUnicode(false)
+                .IsFixedLength()
+                .HasComment("Indica si el contribuyente está obligado a llevar contabilidad")
+                .HasColumnName("OBLIGADO");
+            entity.Property(e => e.PersonaId)
+                .HasComment("Referencia al identificador único del registro del Código de Identificación Municipal")
+                .HasColumnName("PERSONA_ID");
+            entity.Property(e => e.RazonSocial)
+                .HasMaxLength(2000)
+                .IsUnicode(false)
+                .HasColumnName("RAZON_SOCIAL");
+            entity.Property(e => e.Referencia)
+                .HasMaxLength(300)
+                .IsUnicode(false)
+                .HasColumnName("REFERENCIA");
+            entity.Property(e => e.RucContador)
+                .HasMaxLength(13)
+                .IsUnicode(false)
+                .HasComment("Número de identificación del Contador")
+                .HasColumnName("RUC_CONTADOR");
+            entity.Property(e => e.TelefonoCelular)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("TELEFONO_CELULAR");
+            entity.Property(e => e.TelefonoConvencional)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("TELEFONO_CONVENCIONAL");
+            entity.Property(e => e.TerminalActualizacion)
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasComment("Terminal (equipo) desde donde se realizó la Última Actualización (IPv4 o IPv6)")
+                .HasColumnName("TERMINAL_ACTUALIZACION");
+            entity.Property(e => e.TerminalRegistro)
+                .IsRequired()
+                .HasMaxLength(30)
+                .IsUnicode(false)
+                .HasComment("Terminal (equipo) desde donde se realizó el Registro (IPv4 o IPv6)")
+                .HasColumnName("TERMINAL_REGISTRO");
+            entity.Property(e => e.TipoContribuyente)
+                .IsRequired()
+                .HasMaxLength(3)
+                .IsUnicode(false)
+                .HasComment("Tipo de contribuyente (Persona o Sociedad)")
+                .HasColumnName("TIPO_CONTRIBUYENTE");
+            entity.Property(e => e.UsuarioActualizacion)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasComment("Usuario que realizó la Última Actualización")
+                .HasColumnName("USUARIO_ACTUALIZACION");
+            entity.Property(e => e.UsuarioRegistro)
+                .IsRequired()
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasComment("Usuario que realizó el Registro")
+                .HasColumnName("USUARIO_REGISTRO");
         });
 
         modelBuilder.Entity<CorTdCatalogo>(entity =>

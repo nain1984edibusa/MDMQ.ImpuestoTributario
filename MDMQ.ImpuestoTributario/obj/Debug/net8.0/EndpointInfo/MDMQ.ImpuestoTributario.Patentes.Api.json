@@ -81,6 +81,45 @@
         }
       }
     },
+    "/api/ConsultaSri/{ruc}": {
+      "get": {
+        "tags": [
+          "ConsultaSri"
+        ],
+        "parameters": [
+          {
+            "name": "ruc",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DTOCatastroSri"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DTOCatastroSri"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DTOCatastroSri"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -245,6 +284,203 @@
           "parametro4": {
             "type": "string",
             "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DTOCatastroSri": {
+        "type": "object",
+        "properties": {
+          "numeroRuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "numeroIdentificacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "claseContribuyenteId": {
+            "type": "string",
+            "nullable": true
+          },
+          "actividadEconomicaId": {
+            "type": "string",
+            "nullable": true
+          },
+          "personaId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "tipoContribuyente": {
+            "type": "string",
+            "nullable": true
+          },
+          "grupoContribuyente": {
+            "type": "string",
+            "nullable": true
+          },
+          "obligado": {
+            "type": "string",
+            "nullable": true
+          },
+          "rucContador": {
+            "type": "string",
+            "nullable": true
+          },
+          "identificacionRepresentanteLegal": {
+            "type": "string",
+            "nullable": true
+          },
+          "cargoRepresentanteLegal": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaInscripcion": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "fechaInicioActividades": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "fechaConstitucion": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "fechaReinicioActividades": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "fechaSuspensionDefinitiva": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoSociedad": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoLegalCompania": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaRegistro": {
+            "type": "string",
+            "format": "date"
+          },
+          "fechaHoraRegistro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "usuarioRegistro": {
+            "type": "string",
+            "nullable": true
+          },
+          "terminalRegistro": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaActualizacion": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "fechaHoraActualizacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "usuarioActualizacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "terminalActualizacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "razonSocial": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoPersonaSri": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "codigoPersonaRelacionadaSri": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "nombreRepresentanteLegal": {
+            "type": "string",
+            "nullable": true
+          },
+          "callePrincipal": {
+            "type": "string",
+            "nullable": true
+          },
+          "numeroCasa": {
+            "type": "string",
+            "nullable": true
+          },
+          "interseccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoUbicacionGeograficaProvincia": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoUbicacionGeograficaCanton": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoUbicacionGeograficaParroquia": {
+            "type": "string",
+            "nullable": true
+          },
+          "barrio": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailPrincipal": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoCelular": {
+            "type": "string",
+            "nullable": true
+          },
+          "telefonoConvencional": {
+            "type": "string",
+            "nullable": true
+          },
+          "cargaInicial": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcionEstadoContribuyente": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNombramiento": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "referencia": {
+            "type": "string",
             "nullable": true
           }
         },

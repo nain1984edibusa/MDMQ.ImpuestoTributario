@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MDMQ.ImpuestoTributario.Patentes.Dto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e24170ec6b138a17420e46212ba6bfe405490624")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b1695e2fa2293f85d37f37a586bcd9c5c5f8922")]
 [assembly: System.Reflection.AssemblyProductAttribute("MDMQ.ImpuestoTributario.Patentes.Dto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MDMQ.ImpuestoTributario.Patentes.Dto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -40,6 +40,32 @@
     ]
   },
   {
+    "ContainingType": "MDMQ.ImpuestoTributario.Patentes.Api.Controllers.ConsultaSriController",
+    "Method": "GetContribuyentePorRuc",
+    "RelativePath": "api/ConsultaSri/{ruc}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ruc",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MDMQ.ImpuestoTributario.Patentes.Dto.DTOCatastroSri",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MDMQ.ImpuestoTributario.Patentes.Api.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
