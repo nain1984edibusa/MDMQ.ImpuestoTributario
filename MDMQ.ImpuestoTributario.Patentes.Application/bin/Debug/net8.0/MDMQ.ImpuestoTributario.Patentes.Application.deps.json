@@ -8,8 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "MDMQ.ImpuestoTributario.Patentes.Application/1.0.0": {
         "dependencies": {
-          "MDMQ.ImpuestoTributario.Patentes.Datos": "1.0.0",
-          "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0"
+          "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0",
+          "MDMQ.ImpuestoTributario.Patentes.Negocio": "1.0.0"
         },
         "runtime": {
           "MDMQ.ImpuestoTributario.Patentes.Application.dll": {}
@@ -588,6 +588,18 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "MDMQ.ImpuestoTributario.Patentes.Negocio/1.0.0": {
+        "dependencies": {
+          "MDMQ.ImpuestoTributario.Patentes.Datos": "1.0.0",
+          "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0"
+        },
+        "runtime": {
+          "MDMQ.ImpuestoTributario.Patentes.Negocio.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -988,6 +1000,11 @@
       "sha512": ""
     },
     "MDMQ.ImpuestoTributario.Patentes.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MDMQ.ImpuestoTributario.Patentes.Negocio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

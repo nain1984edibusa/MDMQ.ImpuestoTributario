@@ -9,8 +9,7 @@
       "MDMQ.ImpuestoTributario.Patentes.Api/1.0.0": {
         "dependencies": {
           "MDMQ.ImpuestoTributario.Patentes.Application": "1.0.0",
-          "MDMQ.ImpuestoTributario.Patentes.Datos": "1.0.0",
-          "MDMQ.ImpuestoTributario.Patentes.Negocio": "1.0.0",
+          "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.16",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.16",
           "Swashbuckle.AspNetCore": "6.6.2"
@@ -602,8 +601,8 @@
       },
       "MDMQ.ImpuestoTributario.Patentes.Application/1.0.0": {
         "dependencies": {
-          "MDMQ.ImpuestoTributario.Patentes.Datos": "1.0.0",
-          "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0"
+          "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0",
+          "MDMQ.ImpuestoTributario.Patentes.Negocio": "1.0.0"
         },
         "runtime": {
           "MDMQ.ImpuestoTributario.Patentes.Application.dll": {
@@ -635,7 +634,6 @@
       },
       "MDMQ.ImpuestoTributario.Patentes.Negocio/1.0.0": {
         "dependencies": {
-          "MDMQ.ImpuestoTributario.Patentes.Application": "1.0.0",
           "MDMQ.ImpuestoTributario.Patentes.Datos": "1.0.0",
           "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0"
         },

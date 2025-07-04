@@ -1010,6 +1010,20 @@
         "runtime": {
           "bin/placeholder/MDMQ.ImpuestoTributario.Patentes.Dto.dll": {}
         }
+      },
+      "MDMQ.ImpuestoTributario.Patentes.Negocio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MDMQ.ImpuestoTributario.Patentes.Datos": "1.0.0",
+          "MDMQ.ImpuestoTributario.Patentes.Dto": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MDMQ.ImpuestoTributario.Patentes.Negocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MDMQ.ImpuestoTributario.Patentes.Negocio.dll": {}
+        }
       }
     }
   },
@@ -2741,12 +2755,17 @@
       "type": "project",
       "path": "../MDMQ.ImpuestoTributario.Patentes.Dto/MDMQ.ImpuestoTributario.Patentes.Dto.csproj",
       "msbuildProject": "../MDMQ.ImpuestoTributario.Patentes.Dto/MDMQ.ImpuestoTributario.Patentes.Dto.csproj"
+    },
+    "MDMQ.ImpuestoTributario.Patentes.Negocio/1.0.0": {
+      "type": "project",
+      "path": "../MDMQ.ImpuestoTributario.Patentes.Negocio/MDMQ.ImpuestoTributario.Patentes.Negocio.csproj",
+      "msbuildProject": "../MDMQ.ImpuestoTributario.Patentes.Negocio/MDMQ.ImpuestoTributario.Patentes.Negocio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "MDMQ.ImpuestoTributario.Patentes.Datos >= 1.0.0",
-      "MDMQ.ImpuestoTributario.Patentes.Dto >= 1.0.0"
+      "MDMQ.ImpuestoTributario.Patentes.Dto >= 1.0.0",
+      "MDMQ.ImpuestoTributario.Patentes.Negocio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2781,11 +2800,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\AmbDesarrollo\\MDMQ.ImpuestoTributario\\MDMQ.ImpuestoTributario.Patentes.Datos\\MDMQ.ImpuestoTributario.Patentes.Datos.csproj": {
-              "projectPath": "C:\\AmbDesarrollo\\MDMQ.ImpuestoTributario\\MDMQ.ImpuestoTributario.Patentes.Datos\\MDMQ.ImpuestoTributario.Patentes.Datos.csproj"
-            },
             "C:\\AmbDesarrollo\\MDMQ.ImpuestoTributario\\MDMQ.ImpuestoTributario.Patentes.Dto\\MDMQ.ImpuestoTributario.Patentes.Dto.csproj": {
               "projectPath": "C:\\AmbDesarrollo\\MDMQ.ImpuestoTributario\\MDMQ.ImpuestoTributario.Patentes.Dto\\MDMQ.ImpuestoTributario.Patentes.Dto.csproj"
+            },
+            "C:\\AmbDesarrollo\\MDMQ.ImpuestoTributario\\MDMQ.ImpuestoTributario.Patentes.Negocio\\MDMQ.ImpuestoTributario.Patentes.Negocio.csproj": {
+              "projectPath": "C:\\AmbDesarrollo\\MDMQ.ImpuestoTributario\\MDMQ.ImpuestoTributario.Patentes.Negocio\\MDMQ.ImpuestoTributario.Patentes.Negocio.csproj"
             }
           }
         }
