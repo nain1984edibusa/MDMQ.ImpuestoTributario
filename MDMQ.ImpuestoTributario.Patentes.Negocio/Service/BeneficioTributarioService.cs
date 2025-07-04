@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Negocio.Implementacion
 {
-    public class Patentes : IPatentes
+    public class BeneficioTributarioService : IBeneficioTributarioService
     {
         private readonly IBeneficioTributarioRepository _iBeneficioTributario;
 
-        public Patentes(IBeneficioTributarioRepository iBeneficioTributario)
+        public BeneficioTributarioService(IBeneficioTributarioRepository iBeneficioTributario)
         {
             _iBeneficioTributario = iBeneficioTributario;
         }

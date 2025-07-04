@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Negocio.Interfaz
 {
-    public interface IPatentes
+    public interface IConsultaSriService
     {
-        Task<IEnumerable<DTOBeneficioTributario>> GetBeneficioTributario();
+        Task<DTOCatastroSri> ConsultarContribuyentePorRuc(string ruc);
     }
 }

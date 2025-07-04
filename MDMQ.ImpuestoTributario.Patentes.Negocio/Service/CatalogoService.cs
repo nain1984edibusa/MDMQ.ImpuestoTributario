@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Negocio.Implementacion
 {
-    public class CatalogoNeg : ICatalogoNeg
+    public class CatalogoService : Interfaz.ICatalogoService
     {
-        private readonly ICatalogoRepository _iCatalogoRepository;
+        private readonly Datos.Interfaz.ICatalogoRepository _iCatalogoRepository;
 
 
-        public CatalogoNeg(ICatalogoRepository iCatalogoRepository)
+        public CatalogoService(Datos.Interfaz.ICatalogoRepository iCatalogoRepository)
         {
             _iCatalogoRepository = iCatalogoRepository;
         }

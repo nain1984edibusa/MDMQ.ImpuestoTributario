@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Negocio.Interfaz
 {
-    public interface IConsultaSriNeg
+    public interface ICatalogoService
     {
-        Task<DTOCatastroSri> ConsultarContribuyentePorRuc(string ruc);
+        Task<IEnumerable<DTOCatalogo>> ObtenerCatalogo();
     }
 }

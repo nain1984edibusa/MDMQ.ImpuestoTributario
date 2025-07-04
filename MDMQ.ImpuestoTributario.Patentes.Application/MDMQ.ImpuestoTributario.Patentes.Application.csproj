@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\MDMQ.ImpuestoTributario.Patentes.Dto\MDMQ.ImpuestoTributario.Patentes.Dto.csproj" />
+		<ProjectReference Include="..\MDMQ.ImpuestoTributario.Patentes.Datos\MDMQ.ImpuestoTributario.Patentes.Datos.csproj" />
+	</ItemGroup>
+
+</Project>

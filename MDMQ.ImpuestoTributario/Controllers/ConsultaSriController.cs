@@ -10,8 +10,8 @@ namespace MDMQ.ImpuestoTributario.Patentes.Api.Controllers
     [Route("api/[controller]")]
     public class ConsultaSriController : Controller
     {
-        private readonly IConsultaSriNeg _consultaSriNeg;
-        public ConsultaSriController(IConsultaSriNeg consultaSriNeg)
+        private readonly IConsultaSriService _consultaSriNeg;
+        public ConsultaSriController(IConsultaSriService consultaSriNeg)
         {
             _consultaSriNeg = consultaSriNeg;
         }

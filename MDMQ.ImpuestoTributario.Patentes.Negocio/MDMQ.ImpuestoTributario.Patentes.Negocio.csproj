@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MDMQ.ImpuestoTributario.Patentes.Application\MDMQ.ImpuestoTributario.Patentes.Application.csproj" />
     <ProjectReference Include="..\MDMQ.ImpuestoTributario.Patentes.Datos\MDMQ.ImpuestoTributario.Patentes.Datos.csproj" />
     <ProjectReference Include="..\MDMQ.ImpuestoTributario.Patentes.Dto\MDMQ.ImpuestoTributario.Patentes.Dto.csproj" />
   </ItemGroup>

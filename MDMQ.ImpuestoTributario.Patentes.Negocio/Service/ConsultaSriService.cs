@@ -1,4 +1,5 @@
-﻿using MDMQ.ImpuestoTributario.Patentes.Datos.Interfaz;
+﻿using MDMQ.ImpuestoTributario.Patentes.Application.Mappers;
+using MDMQ.ImpuestoTributario.Patentes.Datos.Interfaz;
 using MDMQ.ImpuestoTributario.Patentes.Dto;
 using MDMQ.ImpuestoTributario.Patentes.Negocio.Interfaz;
 using System;
@@ -9,14 +10,15 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Negocio.Implementacion
 {
-    public class ConsultaSriNeg : IConsultaSriNeg
+    public class ConsultaSriService : Interfaz.IConsultaSriService
     {
-        private readonly IConsultaSriRepository _iConsultaSriRepository;
+        private readonly Datos.Interfaz.IConsultaSriRepository _iConsultaSriRepository;
+        private readonly IConsultaSriMapper _mapper;
 
-
-        public ConsultaSriNeg(IConsultaSriRepository iConsultaSriRepository)
+        public ConsultaSriService(Datos.Interfaz.IConsultaSriRepository iConsultaSriRepository, IConsultaSriMapper mapper)
         {
             _iConsultaSriRepository = iConsultaSriRepository;
+            _mapper = mapper;
         }
 
         public async Task<DTOCatastroSri> ConsultarContribuyentePorRuc(string ruc)

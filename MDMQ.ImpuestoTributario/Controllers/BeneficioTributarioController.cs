@@ -10,8 +10,8 @@ namespace MDMQ.ImpuestoTributario.Patentes.Api.Controllers
     [Route("api/[controller]")]
     public class BeneficioTributarioController : Controller
     {
-        private readonly IPatentes _patente;
-        public BeneficioTributarioController(IPatentes patente)
+        private readonly IBeneficioTributarioService _patente;
+        public BeneficioTributarioController(IBeneficioTributarioService patente)
         {
             _patente = patente;
         }

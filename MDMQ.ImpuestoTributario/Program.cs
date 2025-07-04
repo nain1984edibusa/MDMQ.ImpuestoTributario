@@ -1,3 +1,4 @@
+using MDMQ.ImpuestoTributario.Patentes.Application.Mappers;
 using MDMQ.ImpuestoTributario.Patentes.Datos.Contexts;
 using MDMQ.ImpuestoTributario.Patentes.Datos.Implementacion;
 using MDMQ.ImpuestoTributario.Patentes.Datos.Interfaz;
@@ -12,12 +13,15 @@ builder.Services.AddDbContext<MDMQ_CORE_TRIBUTARIOContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MDMQ_CORE_TRIBUTARIO_Connection")));
 
 // Add services to the container.
-builder.Services.AddScoped<IPatentes, Patentes>();
-builder.Services.AddScoped<IBeneficioTributarioRepository, BeneficioTributario>(); // o la implementación real
-builder.Services.AddScoped<ICatalogoNeg, CatalogoNeg>(); // o la implementación real
-builder.Services.AddScoped<ICatalogoRepository, Catalogo>(); // o la implementación real
-builder.Services.AddScoped<IConsultaSriNeg, ConsultaSriNeg>(); // o la implementación real
-builder.Services.AddScoped<IConsultaSriRepository, ConsultaSri>(); // o la implementación real
+builder.Services.AddScoped<IBeneficioTributarioService, BeneficioTributarioService>();
+builder.Services.AddScoped<IBeneficioTributarioRepository, BeneficioTributarioRepository>(); // o la implementación real
+builder.Services.AddScoped<MDMQ.ImpuestoTributario.Patentes.Negocio.Interfaz.ICatalogoService, CatalogoService>(); // o la implementación real
+builder.Services.AddScoped<MDMQ.ImpuestoTributario.Patentes.Datos.Interfaz.ICatalogoRepository, CatalogoRepository>(); // o la implementación real
+builder.Services.AddScoped<MDMQ.ImpuestoTributario.Patentes.Negocio.Interfaz.IConsultaSriService, ConsultaSriService>(); // o la implementación real
+builder.Services.AddScoped<MDMQ.ImpuestoTributario.Patentes.Datos.Interfaz.IConsultaSriRepository, ConsultaSriRepository>(); // o la implementación real
+
+
+builder.Services.AddScoped<IConsultaSriMapper, ConsultaSriMapper>();
 
 
 builder.Services.AddControllers();

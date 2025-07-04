@@ -10,8 +10,8 @@ namespace MDMQ.ImpuestoTributario.Patentes.Api.Controllers
     [Route("api/[controller]")]
     public class CatalogoController : Controller
     {
-        private readonly ICatalogoNeg _catalogoNeg;
-        public CatalogoController(ICatalogoNeg catalogoNeg)
+        private readonly ICatalogoService _catalogoNeg;
+        public CatalogoController(ICatalogoService catalogoNeg)
         {
             _catalogoNeg = catalogoNeg;
         }

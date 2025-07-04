@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDMQ.ImpuestoTributario.Patentes.Api", "MDMQ.ImpuestoTributario\MDMQ.ImpuestoTributario.Patentes.Api.csproj", "{A31C578C-C637-466C-8B63-4064C8A379C5}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDMQ.ImpuestoTributario.Patentes.Dto", "MDMQ.ImpuestoTributario.Patentes.Dto\MDMQ.ImpuestoTributario.Patentes.Dto.csproj", "{9EE0ACA9-193E-4600-B431-97312AEF0825}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDMQ.ImpuestoTributario.Patentes.Negocio", "MDMQ.ImpuestoTributario.Patentes.Negocio\MDMQ.ImpuestoTributario.Patentes.Negocio.csproj", "{773939BD-C94C-4EFF-825E-6570F60C76EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDMQ.ImpuestoTributario.Patentes.Application", "MDMQ.ImpuestoTributario.Patentes.Application\MDMQ.ImpuestoTributario.Patentes.Application.csproj", "{C19E44D8-5606-4574-916F-B70CA3AD2B44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{773939BD-C94C-4EFF-825E-6570F60C76EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{773939BD-C94C-4EFF-825E-6570F60C76EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{773939BD-C94C-4EFF-825E-6570F60C76EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19E44D8-5606-4574-916F-B70CA3AD2B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19E44D8-5606-4574-916F-B70CA3AD2B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19E44D8-5606-4574-916F-B70CA3AD2B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19E44D8-5606-4574-916F-B70CA3AD2B44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

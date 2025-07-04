@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Datos.Implementacion
 {
-    public class Catalogo : ICatalogoRepository
+    public class CatalogoRepository : ICatalogoRepository
     {
         private readonly MDMQ_CORE_TRIBUTARIOContext _contextCoreTributario;
 
-        public Catalogo(MDMQ_CORE_TRIBUTARIOContext contextCoreTributario)
+        public CatalogoRepository(MDMQ_CORE_TRIBUTARIOContext contextCoreTributario)
         {
             _contextCoreTributario = contextCoreTributario;
         }

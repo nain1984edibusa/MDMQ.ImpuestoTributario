@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Datos.Implementacion
 {
-    public class ConsultaSri : IConsultaSriRepository
+    public class ConsultaSriRepository : IConsultaSriRepository
     {
         private readonly MDMQ_CORE_TRIBUTARIOContext _contextCoreTributario;
 
-        public ConsultaSri(MDMQ_CORE_TRIBUTARIOContext contextCoreTributario)
+        public ConsultaSriRepository(MDMQ_CORE_TRIBUTARIOContext contextCoreTributario)
         {
             _contextCoreTributario = contextCoreTributario;
         }

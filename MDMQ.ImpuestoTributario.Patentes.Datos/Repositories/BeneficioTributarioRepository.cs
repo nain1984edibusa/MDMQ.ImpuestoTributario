@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace MDMQ.ImpuestoTributario.Patentes.Datos.Implementacion
 {
-    public class BeneficioTributario : IBeneficioTributarioRepository
+    public class BeneficioTributarioRepository : IBeneficioTributarioRepository
     {
         private readonly MDMQ_CORE_TRIBUTARIOContext _contextCoreTributario;
 
-        public BeneficioTributario(MDMQ_CORE_TRIBUTARIOContext contextCoreTributario)
+        public BeneficioTributarioRepository(MDMQ_CORE_TRIBUTARIOContext contextCoreTributario)
         {
             _contextCoreTributario = contextCoreTributario;
         }
